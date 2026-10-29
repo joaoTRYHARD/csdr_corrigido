@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro - CSDR</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <div class="auth-card">
+      <div class="auth-logo">📝</div>
+      <h1>Criar conta</h1>
+      <p class="sub">Leva menos de um minuto.</p>
+
+      <form id="form-cadastro">
+        <label>Nome <input type="text" id="c-nome" required></label>
+        <label>E-mail <input type="email" id="c-email" required></label>
+        <label>Senha (mín. 6 caracteres) <input type="password" id="c-senha" minlength="6" required></label>
+        <label>Confirmar senha <input type="password" id="c-senha2" required></label>
+        <p class="erro" id="c-erro"></p>
+        <button type="submit" class="grande">Cadastrar</button>
+      </form>
+
+      <p class="troca">Já tem conta? <a href="index.html">Entrar</a></p>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.7.9/dist/axios.min.js"></script>
+  <script src="js/comum.js"></script>
+  <script src="js/cadastro.js"></script>
+</body>
+</html>

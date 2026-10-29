@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meu dispositivo - CSDR</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="topo"></header>
+
+  <main>
+    <h2 class="titulo">Meu dispositivo</h2>
+
+    <div class="grid-stats">
+      <div class="stat"><span class="icone">🧠</span><small>CPU</small><strong id="s-cpu">-</strong></div>
+      <div class="stat"><span class="icone">💾</span><small>RAM</small><strong id="s-ram">-</strong></div>
+      <div class="stat"><span class="icone">📦</span><small>Espaço livre</small><strong id="s-espaco">-</strong></div>
+      <div class="stat"><span class="icone">📱</span><small>Sistema</small><strong id="s-so">-</strong></div>
+    </div>
+
+    <div class="card">
+      <h3>Ajustar valores</h3>
+      <p class="dica">O navegador nem sempre informa tudo. Corrija se precisar.</p>
+      <div class="linha">
+        <label>RAM (GB) <input type="number" id="ram" min="0" step="0.5"></label>
+        <label>Espaço livre (GB) <input type="number" id="espaco" min="0" step="0.5"></label>
+        <label>Núcleos de CPU <input type="number" id="cpu" min="1"></label>
+      </div>
+      <div class="acoes">
+        <a href="verificar.html" class="botao">Verificar um aplicativo →</a>
+        <button id="btn-restaurar" class="fantasma">Usar leitura automática</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.7.9/dist/axios.min.js"></script>
+  <script src="js/comum.js"></script>
+  <script src="js/dispositivo.js"></script>
+</body>
+</html>

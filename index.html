@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login - CSDR</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <div class="auth-card">
+      <div class="auth-logo">⚡</div>
+      <h1>Bem-vindo ao CSDR</h1>
+      <p class="sub">Descubra se seu dispositivo roda o app antes de baixar.</p>
+
+      <form id="form-login">
+        <label>E-mail <input type="email" id="l-email" required></label>
+        <label>Senha <input type="password" id="l-senha" required></label>
+        <p class="erro" id="l-erro"></p>
+        <button type="submit" class="grande">Entrar</button>
+      </form>
+
+      <p class="troca">Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+      <p class="dica">Admin de teste: admin@csdr.com / admin123</p>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.7.9/dist/axios.min.js"></script>
+  <script src="js/comum.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

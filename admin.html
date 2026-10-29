@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin - CSDR</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="topo"></header>
+
+  <main>
+    <h2 class="titulo">Gestão de aplicativos</h2>
+
+    <div class="card">
+      <h3>Novo aplicativo</h3>
+      <form id="form-app">
+        <label>Nome <input type="text" id="n-nome" required></label>
+        <div class="linha">
+          <label>Espaço (GB) <input type="number" id="n-espaco" min="0" step="0.1" required></label>
+          <label>RAM mínima (GB) <input type="number" id="n-ram" min="0" step="0.5" required></label>
+          <label>Núcleos mínimos <input type="number" id="n-cpu" min="1" required></label>
+        </div>
+        <button type="submit">Salvar aplicativo</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h3>Aplicativos cadastrados</h3>
+      <div id="lista-admin"></div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.7.9/dist/axios.min.js"></script>
+  <script src="js/comum.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
